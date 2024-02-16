@@ -4,6 +4,7 @@ stages:
   - job: windows_setup
     pool:
       vmImage: 'windows-2022'  # Use the appropriate Windows version
+    timeoutInMinutes: 360
     steps:
     - powershell: |
         # Download and Setup ngrok
